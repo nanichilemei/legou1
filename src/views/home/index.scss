@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.home {
+  margin-bottom: 100px;
+  position: relative;
+  .header {
+    width: 100%;
+    height: 44px;
+    box-sizing: border-box;
+    padding: 0 5px 0;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    .posi {
+      width: fit-content;
+    }
+    .serch {
+      width: 300px;
+      height: 100%;
+    }
+  }
+  .banner {
+    margin-top: 44px;
+    .rotate-img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .channel {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    .item {
+      width: calc(100% / 5);
+      height: 70px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-content: center;
+      .channel-img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+  .brandList {
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+    margin-top: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .txt {
+      width: 100%;
+      text-align: center;
+      font-size: 12px;
+      line-height: 52px;
+    }
+    .item:nth-child(even) {
+      margin-left: 4px;
+    }
+    .item:nth-child(odd) {
+      margin-right: 4px;
+    }
+    .item {
+      width: 178px;
+      height: 116px;
+      position: relative;
+      margin-bottom: 4px;
+      font-size: 12px;
+      font-weight: 700;
+      // :style="{ background: 'url(item.new_pic_url) no-repeat  center 100%' }"
+      .text {
+        position: absolute;
+        top: 20px;
+        left: 10px;
+      }
+      .price {
+        position: absolute;
+        top: 50px;
+        left: 10px;
+      }
+      .brimg {
+        width: 178px;
+        height: auto;
+      }
+    }
+  }
+  .newob,
+  .hotob {
+    width: 100%;
+    height: 130px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url(../../assets/images/bgnew.png) no-repeat;
+    background-size: 375px auto;
+    .p1 {
+      font-size: 16px;
+      margin: 16px auto;
+      color: #8c9bae;
+    }
+    .p2 {
+      width: 90px;
+      height: 24px;
+      font-size: 12px;
+      line-height: 24px;
+      color: #8c9bae;
+      background-color: #d8e4f0;
+    }
+  }
+  .hotob {
+    background: url(../../assets/images/bgtopic.png) no-repeat;
+    .p1 {
+      color: #b1a279;
+    }
+    .p2 {
+      width: 90px;
+      color: #b1a279;
+      background-color: #f4e9cb;
+    }
+  }
+  .newgood,
+  .hotgood {
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 5px;
+    overflow: auto;
+    background-color: #fff;
+    .goods {
+      width: fit-content;
+      display: flex;
+      justify-content: flex-start;
+      .item {
+        margin: 2px 12px 2px 0;
+        width: 140px;
+        .newimg {
+          width: 140px;
+          height: 140px;
+        }
+        .p1 {
+          text-indent: 20px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          width: 80%;
+          font-size: 15px;
+          font-weight: 700;
+          line-height: 25px;
+        }
+        .p2 {
+          text-indent: 20px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          width: 80%;
+          color: #8a8a8a;
+          line-height: 25px;
+          font-size: 12px;
+        }
+        .p3 {
+          text-indent: 20px;
+          font-size: 12px;
+          text-align: left;
+          color: #9c3232;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+  .topicList {
+    width: 100%;
+    height: fit-content;
+    margin-top: 15px;
+    padding-bottom: 5px;
+    overflow: auto;
+    background-color: #fff;
+    .head {
+      text-align: center;
+      padding: 12px;
+      vertical-align: middle;
+    }
+    .list {
+      width: fit-content;
+      display: flex;
+      justify-content: flex-start;
+      .item:nth-child(3) {
+        margin-right: 12px;
+      }
+      .item {
+        width: 287px;
+        height: 250px;
+        margin-left: 12px;
+        .topimg {
+          width: 287px;
+          height: 162px;
+        }
+        .center {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: nowrap;
+          .title {
+            font-size: 15px;
+            font-weight: 700;
+          }
+          .price {
+            color: #9c3232;
+            font-size: 12px;
+          }
+        }
+        .subtitle {
+          margin-top: 16px;
+          width: 231px;
+          text-align: left;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+  .newCategoryList {
+    width: 100%;
+    height: fit-content;
+    .list {
+      .head {
+        width: 100%;
+        text-align: center;
+        font-size: 12px;
+        padding: 12px 0;
+      }
+      .goodsList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .sublist {
+          width: 180px;
+          height: 209px;
+          margin-bottom: 5px;
+          background-color: #fff;
+          padding-bottom: 5px;
+          position: relative;
+          .subimg {
+            width: 151px;
+            height: 151px;
+            margin: 0 auto;
+          }
+          .p1 {
+            width: 98%;
+            font-size: 12px;
+            text-align: left;
+            text-indent: 15px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-weight: 500;
+            margin-top: 12px;
+          }
+          .p2 {
+            margin-top: 16px;
+            font-size: 12px;
+            text-align: left;
+            text-indent: 15px;
+            color: #9c3232;
+          }
+          .text {
+            font-size: 16px;
+            position: absolute;
+            top: 40px;
+            right: 50px;
+          }
+          .right {
+            width: 36px;
+            height: 36px;
+            position: absolute;
+            top: 100px;
+            right: 70px;
+          }
+        }
+      }
+    }
+  }
+}
